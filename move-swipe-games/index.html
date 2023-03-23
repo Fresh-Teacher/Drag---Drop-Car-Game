@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-EN">
 <head>
@@ -6,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en" />
 <meta name="LANGUAGE" content="en" />
-<title>Online games for childrens under 5</title>
+<title>Free Nursery Games by Dragging and Dropping</title>
 
 <meta property="og:type" content="website"/>
 <link rel="icon" type="image/png" href="https://www.happyclicks.net/favicon.png" />
@@ -17,26 +16,20 @@
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="js/13-movertouch-arcoiris.js"></script>
+<script src="js/02-dragndrop-vehiculos.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("214C8A0F6AE378478AC868C760B94C9D");
+	var comp=AdobeAn.getComposition("9B566B315725DC41BBCA31F04DECEE20");
 	var lib=comp.getLibrary();
-	createjs.MotionGuidePlugin.install();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
-	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
 	loader.loadManifest(lib.properties.manifest);
-}
-function handleFileLoad(evt, comp) {
-	var images=comp.getImages();	
-	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
 }
 function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
@@ -50,7 +43,7 @@ function handleComplete(evt,comp) {
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
 	canvas.style.display = 'block';
-	exportRoot = new lib._13movertoucharcoiris();
+	exportRoot = new lib._02dragndropvehiculos();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
@@ -103,23 +96,79 @@ function playSound(id, loop) {
 	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
 }
 </script>
-<!-- write your code here -->
 
-</head>
-<body onload="init();" style="margin:0px;">
-<div class="container-indiv">
-<div class="juego-main">
-<div class="juego">
-
-   	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:730px; height:367px">
-		<canvas id="canvas" width="730" height="367" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:730px; height:367px; position: absolute; left: 0px; top: 0px; display: none;">
+<body onload="init();" style="margin:0px; padding: 50px;">
+	
+	<div class="container-indiv">
+	<div class="juego-main">
+	<div class="juego">
+	
+		   <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:730px; height:367px">
+			<canvas id="canvas" width="730" height="367" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+			<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:730px; height:367px; position: absolute; left: 0px; top: 0px; display: none;">
+			</div>
 		</div>
-	</div>
-   
-   
-    <div id='_preload_div_' style='position:absolute; top:0; left:120; display: inline-block; height:367px; width:730px; text-align: left;'>	<span style='display: inline-block; height: 100%; vertical-align: top;'></span>	<img src=images/_preloader.gif alt="preloader" style='vertical-align: left; max-height: 100%'/></div>
-         	<div class="clearfloat"></div>
-
-</body>
-</html>
+	   
+	   
+		<div id='_preload_div_' style='position:absolute; top:0; left:120; display: inline-block; height:367px; width:730px; text-align: left;'>	<span style='display: inline-block; height: 100%; vertical-align: top;'></span>	<img src=images/_preloader.gif alt="preloader" style='vertical-align: left; max-height: 100%'/></div>
+				 <div class="clearfloat"></div>
+				 <h1>Instructions</h1>
+				 <p>Drag and drop the cars in their respective outlines. Enjoy! 😁</p>
+				 <h2>Level</h2>
+				 <p>Nursery</p>
+				
+				 <h2>Learning Area</h2>
+				 <p>General Knowledge</p>
+				 <h2>Content</h2>
+				 <ul>
+					 <li>Transport.</li>
+					
+				 </ul>
+				 <h2>Learning Outcome</h2>
+				 <p>The learner:</p>
+				 <ul>
+					  <li>Names different means of transport.</li>
+					 <li>Gives different means of transport.</li>
+				 </ul>
+				 <h2>Methods and Techniques</h2>
+				 <ul>
+					 <li>Question and answer approach</li>
+					 <li>Guided discovery</li>
+					 <li>Brainstorming</li>
+					 <li>Instruction method</li>
+				 </ul>
+				 <h2>Suggested Activities</h2>
+				 <p>The learner:</p>
+				 <ul>
+					<li>Names different means of transport.</li>
+					 <li>Gives different means of transport.</li>
+				 </ul>
+				 <h2>Life Skills and Values</h2>
+				 <ul>
+					 <li>Critical thinking</li>
+					 <li>Reasoning</li>
+					 <li>Accuracy</li>	
+				 </ul>
+				 <h2>Instructional Materials</h2>
+				 <ul>
+					 <li>Desktop computers</li>
+					 <li>Laptops</li>
+					 <li>Tablets</li>
+					 <li>Phones</li>
+				 </ul>
+	
+				 <div style="text-align:center; background-color: grey;">
+					<script>
+					  var currentYear = new Date().getFullYear();
+					  document.write("&copy; <a href='https://freshteacher.software'>Fresh Teacher Software</a> " + currentYear);
+					</script><br>
+					<span>All Rights reserved</span>
+				  </div>
+				  
+				  
+				  
+							  
+	</body>
+	
+	
+	</html>
